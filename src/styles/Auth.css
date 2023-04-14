@@ -1,0 +1,11 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+form {
+    max-width: 550px;
+    box-sizing: border-box;
+    padding: 100px 24px;
+    width: 100%;
+    border-radius: 5px;
+}

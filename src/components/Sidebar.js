@@ -7,9 +7,16 @@ import { Link } from 'react-router-dom';
 
 
 class Sidebar extends Component {
+    handleLogout = () => {
+        // Perform logout logic here, such as clearing user session or tokens
+        localStorage.clear();
+        // Redirect to the authentication page
+        window.location.href = '/auth';
+      };
 
     render() {
         return (
+
             <div className="sidebar">
                 <ul>
                     <Link to={"/Account"} style={{ textDecoration: "none", color: "white" }}>
@@ -23,7 +30,7 @@ class Sidebar extends Component {
                         <li><PeopleAltIcon /> Dashboard</li>
                     </Link>
                     <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
-                        <li><SettingsIcon /> Logout</li>
+                        <li onClick={this.handleLogout}><SettingsIcon /> Logout</li>
                     </Link>
                 </ul>
             </div>

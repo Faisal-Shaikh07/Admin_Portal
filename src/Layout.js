@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Account from "./components/Account";
 import { Routes, Route } from 'react-router-dom';
 import Auth from "./components/Auth";
-import Logout from "./components/Logout";
+
 
 function Layout() {
 
@@ -28,7 +28,6 @@ function Layout() {
                 <Routes>
                     <Route path='/dashboard' element={<Dashboard />} />
                     <Route path='/account' element={<Account />} />
-                    <Route path='/' element={<Logout />} />
                 </Routes>
             </div>
 
